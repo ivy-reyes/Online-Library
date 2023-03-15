@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+}
+
+header {
+    height: 410px;
+    width: 100%;
+    background-image: url(img1-banner.jpeg);
+    background-size: 100% 460px;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.taglines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 165px;
+    margin-right: 230px;
+}
+
+.tagline-1 {
+    color: white;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.tagline-2 {
+    color: rgb(29, 123, 132);
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.btn {
+    position: relative;
+    top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.btn :hover {
+    color: aliceblue;
+    background: rgb(29, 123, 132);
+}
+
+.btn button {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav {
+    height: 65px;
+    background-color: rgb(249, 250, 255);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+.magnifying {
+    float: right;
+    font-size: 30px;
+    color: rgb(29, 123, 132);
+    margin-top: 16px;
+    margin-right: 10px;
+    display: none;  
+}
+.checkbtn {
+    font-size: 30px;
+    color: rgb(29, 123, 132);
+    float: right;
+    margin-top: 16px;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer; 
+}
+.check {
+    display: none;
+}
+
+.logo {
+    color: rgb(29, 123, 132);
+}
+
+.logo span {
+    font-size: 30px;
+    top: 15px;
+    left: 30px;
+    position: relative;
+    font-weight: 900;
+    padding-left: 5px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    float: right;
+    position: relative;
+}
+
+.nav-list li {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    right: 30px;
+}
+
+.nav-list li :hover {
+    color: aliceblue;
+    background: rgb(29, 123, 132);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(29, 123, 132);
+}
+
+.bs-books {
+    background-color: rgb(250, 231, 219);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.bs-books-title {
+    font-weight: 600;
+    position: relative;
+    top: 20px;
+    margin-left: 30px;
+    font-size: 30px;
+    color: rgb(16, 15, 15);
+    padding-top: 10px;
+}
+
+.bs-books-title .fa-solid {
+    color: rgb(224, 92, 39);
+    
+}
+
+.bs-card-list {
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bs-cards {
+    display: flex;
+    flex-wrap: unset;
+    overflow: hidden;
+}
+
+/*************************** START OF PORTRAIT ***************************/
+.card-portrait {
+    height: 480px;
+    width: 300px;
+    background-color: rgb(249, 250, 255);
+    margin: 100px 20px 0 20px;
+    border-radius: 10px;
+}
+
+.cover-portrait {
+    height: 225px;
+    width: 300px;
+    background-color: rgb(42, 129, 136);
+    border-radius: 10px 10px 0 0;
+}
+
+.book-cover-portrait {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.book-cover-portrait img {
+    object-fit: cover;
+    position: relative;
+    height: 270px;
+    width: 150px;
+    top: 20px;
+}
+
+.description-portrait {
+    position: relative;
+    display: flex;
+}
+
+.title-portrait {
+    color: rgb(22, 23, 27);
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 85px 0 0 10px;
+    position: relative;
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book-description-portrait {
+    display: none;
+}
+
+.by-portrait {
+    display: none;
+}
+
+.author-portrait {
+    color: rgb(42, 129, 137);
+    margin: 5px 0 0 10px;
+    font-weight: 300;
+}
+
+.ratings-portrait {
+    color: rgb(228, 122, 3);
+    margin: 10px 0 0 10px;
+    font-size: 15px;
+}
+
+.ratings-portrait .ratings-number {
+    color: rgb(22, 23, 27);
+    margin-left: 5px;
+}
+
+.genre-portrait {
+    display: none;
+}
+
+.price-portrait {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 7px 0 10px 10px;
+    color: rgb(22, 23, 27);
+    text-decoration: underline;
+}
+
+.buy-now-button-portrait button {
+    color: rgb(226, 13, 13);
+    background-color: rgb(249, 250, 255);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: color 0.4s linear;
+    position: absolute;
+    right: 30px;
+
+
+}
+
+.buy-now-button-portrait a {
+    text-decoration: none;
+}
+
+.buy-now-button-portrait :hover {
+    color: rgb(42, 129, 136);
+}
+
+.buttons {
+    margin: 5px 0 0 10px;
+
+}
+
+.buttons button {
+    height: 25px;
+    width: 90px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(42, 129, 137);
+    color: rgb(244, 243, 243);
+    transition: color 0.4s linear;
+    font-weight: 400;
+}
+
+.buttons :hover {
+    color: rgb(40, 39, 39);
+}
+
+/***************************** END OF PORTRAIT *****************************/
+
+/************************** START OF LARGE SCREEN **************************/
+
+.bs-arr-left {
+    font-size: 40px;
+    color: rgb(16, 15, 15);
+    padding-left: 8px;
+    transition: color 0.4s linear;
+}
+
+.bs-arr-left :hover {
+    color: rgb(175, 208, 198)
+}
+
+.bs-arr-right {
+    font-size: 40px;
+    color: rgb(16, 15, 15);
+    padding-right: 8px;
+    transition: color 0.4s linear;
+}
+
+.bs-arr-right :hover {
+    color: rgb(175, 208, 198);
+}
+
+.na-books {
+    background-color: rgb(223, 196, 159);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.na-books-title {
+    font-weight: 600;
+    position: relative;
+    top: 20px;
+    margin-left: 30px;
+    font-size: 30px;
+    color: rgb(16, 15, 15);
+    padding-top: 10px;
+}
+
+.na-books-title .fa-solid {
+    color: rgb(224, 92, 39);
+}
+
+.na-card-list {
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.na-cards {
+    display: flex;
+    flex-wrap: unset;
+    overflow: hidden;
+}
+
+.page-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(42, 129, 136);
+    position: relative;
+    bottom: 8px;
+}
+
+.page-indicator span {
+    margin: 5px;
+}
+
+.page-indicator span :hover {
+    color: rgb(175, 208, 198);
+}
+
+.na-arr-left {
+    font-size: 40px;
+    color: rgb(16, 15, 15);
+    padding-left: 8px;
+    transition: color 0.4s linear;
+}
+
+.na-arr-left :hover {
+    color: rgb(175, 208, 198)
+}
+
+.na-arr-right {
+    font-size: 40px;
+    color: rgb(16, 15, 15);
+    padding-right: 8px;
+    transition: color 0.4s linear;
+}
+
+.na-arr-right :hover {
+    color: rgb(175, 208, 198);
+}
+
+.checkout {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(224, 92, 39);
+    margin: 5px;
+}
+
+.checkout-desc span {
+    font-size: 40px;
+    position: relative;
+    top: 15px;
+    color: rgb(255, 255, 255);
+
+}
+
+.checkout-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.checkout-desc .tooltip {
+    position: absolute;
+    font-size: 15px;
+    width: 100px;
+    background-color: rgb(224, 92, 39);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    right: 85px;
+    border-radius: 5px;
+    display: none;
+
+}
+
+.checkout :hover .tooltip {
+    display: flex;
+
+}
+
+footer {
+    height: 170px;
+    background-color: rgb(189, 219, 212);
+}
+
+.social-icons {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    padding: 5px;
+}
+
+.social-icons .fa-brands {
+    padding: 5px;
+}
+
+.social-icons :hover {
+    color: rgb(42, 129, 136);
+}
+
+.legals {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    padding: 5px;
+}
+
+.legals span {
+    padding: 5px;
+}
+
+.legals :hover {
+    color: rgb(42, 129, 136);
+}
+
+.copyrights {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.copyrights span {
+    padding: 10px;
+
+}
+
+.solid-line {
+    position: relative;
+    top: 20px;
+    width: 50%;
+    left: 25%;
+}
+
+/*************************** END OF LARGE SCREEN ****************************/
+
+/************************** START OF MEDIUM SCREEN **************************/
+@media (max-width: 880px) {
+    .taglines {
+        top: 150px;
+        flex-direction: column;
+    }
+
+    .card-portrait {
+        height: 300px;
+        width: 500px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .cover-portrait {
+        border-radius: 0 10px 10px 0;
+        height: 300px;
+    }
+
+    .book-cover-portrait img {
+        object-fit: cover;
+        position: relative;
+        margin-bottom: 5px;
+        height: 180px;
+        width: auto;
+        border-radius: 5px;
+    }
+
+    .book-cover-portrait {
+        width: 150px;
+    }
+    .details-portrait {
+        position: relative;
+        bottom: 70px;
+    }
+
+    .buy-now-button-portrait button {
+        position: relative;
+        left: 395px;
+        bottom: 140px;
+    }
+
+    .book-description-portrait {
+        color: rgb(22, 23, 27);
+        margin: 10px 10px 0 10px;
+        font-weight: 200;
+        font-style: italic;
+        text-align: justify;
+        display: flex;
+    }
+
+    .description-portrait {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    .ratings-portrait {
+        font-size: 12px;
+    }
+
+    .by-portrait {
+        display: inline-block;
+        color: rgb(22, 23, 27);
+
+    }
+
+    .genre-portrait {
+        display: inline-block;
+        margin: 15px 0 0 10px;
+        color: rgb(42, 129, 137);
+
+    }
+
+    .genre-portrait span {
+        margin-right: 8px;
+    }
+}
+
+/************************** END OF MEDIUM SCREEN **************************/
+
+/************************** START OF SMALL SCREEN **************************/
+@media (max-width: 650px) {
+    header {
+        display: none;
+    }
+    .magnifying {
+        display: block;  
+    }
+    .checkbtn {
+        display: block;
+    }
+    .nav-list {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(189, 219, 212);
+        top: 65px;
+        right: -100%;
+        text-align: center;
+        flex-direction: column;
+        transition: all .5s;
+        
+    }
+    .nav-list li {
+        right: 0px;
+        margin: 20px 0;
+        
+    }
+    .nav-list li a {
+        font-size: 30px;
+    }
+    #check:checked ~ ul {
+        right: 0%;
+    }
+
+    .bs-cards,
+    .na-cards {
+        flex-wrap: wrap;
+        overflow: visible;
+
+    }
+    .bs-card-list,
+    .na-card-list {
+        justify-content: center;
+        margin-left: 10%;
+    } 
+    
+    .bs-books,
+    .na-books {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bs-arr-left,
+    .bs-arr-right,
+    .na-arr-left,
+    .na-arr-right,
+    .page-indicator {
+        display: none;
+    }
+}
+@media (max-width: 530px) {
+    .bs-card-list, .na-card-list {
+      scale: .8;
+      margin-top: -130px;
+      top: 40px;
+      margin-left: -2%;
+      
+    }
+    .card-portrait {
+      margin-top: 50px;
+    }
+}
+@media (max-width: 375px) {
+    .magnifying, .checkbtn, .logo span {
+        font-size: 23px;
+    }
+    
+    .bs-card-list, .na-card-list {
+        scale: .7;
+        margin-top: -200px;
+        margin-left: -2%; 
+        margin-bottom: -155px;
+      }
+      .card-portrait {
+        margin-top: 50px;
+      }
+
+}
+/************************** END OF SMALL SCREEN **************************/

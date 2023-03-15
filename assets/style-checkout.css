@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+
+}
+
+.logo {
+    color: rgb(29, 123, 132);
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    margin: 20px 0 0 70px;
+}
+
+.logo span {
+    font-size: 30px;
+    top: 15px;
+    left: 30px;
+    position: relative;
+    font-weight: 900;
+    padding-left: 5px;
+}
+
+.information {
+    height: auto;
+    width: 60%;
+    background-color: rgb(229, 229, 229);
+}
+
+.contact-info {
+    margin: 80px 0 0 70px;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.contact-info-input input {
+    position: relative;
+    margin-left: 70px;
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+    top: 10px;
+}
+
+.news {
+    margin: 20px 0 0 70px;
+    position: relative;
+}
+
+.news input {
+    accent-color: rgb(29, 123, 131);
+}
+
+.news span {
+    color: rgb(29, 123, 131);
+}
+
+.shipping-add {
+    position: relative;
+    margin: 45px 0 0 70px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.country {
+    position: relative;
+    margin: 20px 0 0 70px;
+}
+
+.country select {
+    width: 80%;
+    height: 40px;
+
+}
+
+.names {
+    position: relative;
+    margin: 10px 0 0 70px;
+}
+
+.names input {
+    width: 39.8%;
+    height: 40px;
+    font-size: 15px;
+}
+
+.street-address {
+    position: relative;
+    margin: 10px 0 0 70px;
+}
+
+.street-address input {
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+}
+
+.brgy {
+    position: relative;
+    margin: 10px 0 0 70px;
+}
+
+.brgy input {
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+}
+
+.division {
+    position: relative;
+    margin: 10px 0 0 70px;
+}
+
+.division input {
+    width: 39.8%;
+    height: 40px;
+    font-size: 15px;
+}
+
+.province {
+    position: relative;
+    margin: 10px 0 0 70px;
+}
+
+.province select {
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+}
+
+.payment-option {
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    margin: 45px 0 0 70px;
+    margin-bottom: 10px;
+}
+
+.payment-option-title {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.payment-option-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.payment-option-list input {
+    accent-color: rgb(29, 123, 131);
+}
+
+.save {
+    position: relative;
+    margin: 20px 0 0 70px;
+}
+
+.save input {
+    accent-color: rgb(29, 123, 131);
+}
+
+.save span {
+    color: rgb(29, 123, 131);
+}
+
+.actions {
+    position: relative;
+    margin: 20px 70px 50px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions a {
+    text-decoration: none;
+    color: rgb(29, 123, 131);
+}
+
+.actions button {
+    font-size: 20px;
+    background-color: rgb(29, 123, 131);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.product-summary {
+    height: auto;
+    width: 40%;
+    background-color: rgb(247, 247, 247);
+}
+
+.product-summary-head {
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(29, 123, 131);
+    position: relative;
+    margin: 30px 0 0 70px;
+}
+
+.product {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    margin: 30px 0 0 70px;
+}
+
+.product-img {
+    border: 3px solid rgb(29, 123, 131);
+    display: flex;
+    width: 100px;
+}
+
+img {
+    object-fit: cover;
+    width: 95px;
+}
+
+.product-desc {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    padding: 8px;
+}
+
+.title {
+    font-weight: 800;
+    position: relative;
+}
+
+.author {
+    font-size: 10px;
+}
+
+.product-price {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 30px;
+    font-weight: 800;
+}
+
+.solid-line-1 {
+    position: relative;
+    margin-top: 30px;
+    width: 80%;
+    left: 10%;
+}
+
+.discount {
+    position: relative;
+    margin: 30px 0 0 70px;
+}
+
+.discount input {
+    width: 55%;
+    height: 40px;
+    font-size: 15px;
+}
+
+.discount button {
+    position: relative;
+    font-size: 20px;
+    background-color: rgb(29, 123, 131);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.solid-line-2 {
+    position: relative;
+    margin-top: 30px;
+    width: 80%;
+    left: 10%;
+}
+
+.subtotal {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0 70px;
+    font-size: 13px;
+
+}
+
+.subtotal-price {
+    position: relative;
+    float: right;
+    margin-right: 100px;
+
+}
+
+.shipping {
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    margin: 30px 0 0 70px;
+    font-size: 13px;
+}
+
+.shipping-price {
+    position: relative;
+    float: right;
+    margin-right: 100px;
+}
+
+.solid-line-3 {
+    position: relative;
+    margin-top: 30px;
+    width: 80%;
+    left: 10%;
+}
+
+.total {
+    position: relative;
+    margin: 30px 0 50px 70px;
+    justify-content: space-between;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.total-price {
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+/*************************** End of Large Screen ***************************/
+
+/************************** Start of Medium Screen **************************/
+@media (max-width: 850px) {
+    .logo {
+        position: fixed;
+        top: 0;
+
+    }
+
+    form {
+        flex-direction: column-reverse;
+    }
+
+    .product-summary,
+    .information {
+        width: auto;
+        top: 90px;
+        position: relative;
+    }
+
+}

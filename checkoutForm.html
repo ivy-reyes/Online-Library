@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2780e15db7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style-checkout.css">
+    <title>Checkout Form</title>
+</head>
+
+<body>
+    <form>
+        <label class="logo">
+            <span><i class="fa-solid fa-book-bookmark"></i></span>
+            <span>The Story Keeper</span>
+        </label>
+        <div class="information">
+            <div class="contact-info">
+                <span>Contact Information</span>
+            </div>
+            <div class="contact-info-input">
+                <input type="text" id="contactInfo" name=" contactInfo" placeholder="  Email or mobile number" size="50"
+                    required>
+            </div>
+            <div class="news">
+                <span><input type="checkbox" id="news" name="news" value="yes"></span>
+                <span>Email me with news and offers</span>
+            </div>
+            <div class="shipping-add">
+                <span>Shipping Address</span>
+            </div>
+            <div class="country">
+                <select id="country" name="country">
+                    <option disabled selected>Please select country</option>
+                    <option value="philippines">Philippines</option>
+                    <option value="japan">Japan</option>
+                </select>
+            </div>
+            <div class="names">
+                <span><input type="text" id="firstName" name="firstName" placeholder="  First Name" size="50" required>
+                </span>
+                <span><input type="text" id="lastName" name="lastName" placeholder="  Last Name" size="50" required>
+                </span>
+            </div>
+            <div class="street-address">
+                <span></span><input type="text" id="streetAddress" name="streetAddress" placeholder="  Address"
+                    size="50" required>
+                </span>
+            </div>
+            <div class="brgy">
+                <span><input type="text" id="brgy" name="brgy" placeholder="  Barangay" size="50" required>
+                </span>
+            </div>
+            <div class="division">
+                <span><input type="text" id="postalCode" name="postalCode" placeholder="  Postal Code" size="50"
+                        required>
+                </span>
+                <span><input type="text" id="city" name="city" placeholder="  Municipality/City" size="50" required>
+                </span>
+            </div>
+            <div class="province">
+                <select id="province" name="province">
+                    <option disabled selected>Province</option>
+                    <option value="laguna">Laguna</option>
+                    <option value="manila">Batangas</option>
+                </select>
+            </div>
+            <div class="payment-option">
+                <div class="payment-option-title">
+                    <span>Payment Option</span>
+                </div>
+                <div class="payment-option-list">
+                    <span><input type="radio" id="cashOnDelivery" name="payment" value="cashOnDelivery">
+                        <label for="cashOnDelivery">Cash on Delivery</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="masterCard" name="payment" value="masterCard">
+                        <label for="masterCard">Master Card</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="visa" name="payment" value="visa">
+                        <label for="visa">Visa</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="gcash" name="payment" value="gcash">
+                        <label for="gcash">Gcash</label>
+                    </span>
+                </div>
+            </div>
+            <div class="save">
+                <span><input type="checkbox" id="save" name="save" value="yes"></span>
+                <span>Save this information next time</span>
+            </div>
+            <div class="actions">
+                <a href="index.html"><span class="arr"><i class="fa-solid fa-chevron-left"></i></span>
+                    <span class="return">Return to library</span>
+                </a>
+                <span>
+
+                </span>
+                <span><button>Proceed Payment</button></span>
+            </div>
+        </div>
+        <div class="product-summary">
+            <div class="product-summary-head">
+                <span>Product Summary</span>
+            </div>
+            <div class="product">
+                <div class="product-img">
+                    <img src="assets/img2.jpg">
+                </div>
+                <div class="product-desc">
+                    <span class="title">The Great Gatsby</span>
+                    <span class="author">F. Scott Fitzgerald</span>
+                </div>
+                <div class="product-price">
+                    <span>PHP 500.00</span>
+                </div>
+            </div>
+            <hr class="solid-line-1">
+            <div class="discount">
+                <span><input type="text" id="discountCode" name="discountCode" placeholder="  Discount Code" size="50"
+                        required>
+                </span>
+                <span><button>Apply</button></span>
+            </div>
+            <hr class="solid-line-2">
+            <div class="subtotal">
+                <span>Subtotal</span>
+                <span></span>
+                <span class="subtotal-price">PHP 500.00</span>
+            </div>
+            <div class="shipping">
+                <span>Shipping Fee</span>
+                <span></span>
+                <span class="shipping-price">PHP 49.00</span>
+            </div>
+            <hr class="solid-line-3">
+            <div class="total">
+                <span>Total</span>
+                <span></span>
+                <span class="total-price">PHP 549.00</span>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
